@@ -1,3 +1,5 @@
+package book_data_structures_and_algorithms_in_java_6ed.ch1_java_primer;
+
 /**
  * Suppose that we create an array A of GameEntry objects, which has an integer
  * scores field, and we clone A and store the result in an array B. If we then
