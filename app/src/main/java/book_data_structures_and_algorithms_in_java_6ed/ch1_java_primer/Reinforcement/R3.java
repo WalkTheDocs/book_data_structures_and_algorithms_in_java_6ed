@@ -1,4 +1,4 @@
-package book_data_structures_and_algorithms_in_java_6ed.ch1_java_primer;
+package book_data_structures_and_algorithms_in_java_6ed.ch1_java_primer.Reinforcement;
 
 /**
  * Write a short Java method, isMultiple, that takes two long values, n and m,
