@@ -6,7 +6,7 @@ import java.util.HashSet;
  * Write a Java method that takes an array of float values and determines if all
  * the numbers are different from each other (that is, they are distinct).
  */
-class C20 {
+public class C20 {
     public static void main(String[] args) {
         Float[] test = { 1F, 2F, 3F };
         HashSet<Float> set = new HashSet<Float>();

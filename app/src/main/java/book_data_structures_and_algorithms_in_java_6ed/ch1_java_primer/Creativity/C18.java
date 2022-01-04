@@ -2,7 +2,7 @@ package book_data_structures_and_algorithms_in_java_6ed.ch1_java_primer.Creativi
 
 import java.util.Arrays;
 
-class C18 {
+public class C18 {
     public static void main(String[] args) {
         Vector a = new Vector(new double[]{1, 2, 3});
         System.out.println(String.format("Euclidean norm = %.4f", Vector.norm(a)));

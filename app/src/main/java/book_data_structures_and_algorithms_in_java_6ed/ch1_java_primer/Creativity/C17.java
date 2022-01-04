@@ -11,7 +11,7 @@ package book_data_structures_and_algorithms_in_java_6ed.ch1_java_primer.Creativi
  * If the array has two or more elements and one of them is even, then
  * there exist two distinct elements whose product will also be even.
  */
-class C17 {
+public class C17 {
     public static void main(String[] args) {
         boolean hasEvenDistinctProduct = false;
         boolean hasEvenElement = false;

@@ -4,7 +4,7 @@ package book_data_structures_and_algorithms_in_java_6ed.ch1_java_primer.Reinforc
  * Write a short Java method that takes an integer n and returns the sum of the
  * squares of all positive integers less than or equal to n.
  */
-class R7 {
+public class R7 {
     public static void main(String[] args) {
         confirm(20);
     }

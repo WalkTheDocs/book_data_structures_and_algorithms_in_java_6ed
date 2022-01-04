@@ -7,7 +7,7 @@ import java.util.Arrays;
  * largest numbers in an array of integers and compare that to a Java method
  * that would do the same thing.
  */
-class C15 {
+public class C15 {
 
     public static void main(String args[]) {
         int[] test = { 1, 2, 3, 4, 5 };

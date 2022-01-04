@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
  * https://stackoverflow.com/questions/6612870/posix-character-equivalents-in-java-regular-expressions
  * https://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html
  */
-class R9 {
+public class R9 {
     public static void main(String[] args) {
         String test = "Let's try, Mike!";
         StringBuilder result = new StringBuilder(test.length());

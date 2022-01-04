@@ -7,7 +7,7 @@ import java.util.Scanner;
  * and write out the number of times one must repeatedly divide this number by 2
  * before getting a value less than 2.
  */
-class C19 {
+public class C19 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Input an integer: ");

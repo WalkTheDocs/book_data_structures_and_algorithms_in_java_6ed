@@ -25,7 +25,7 @@ import org.apache.commons.lang3.ArrayUtils;
  * minor syntax differences.
  */
 
-class C14 {
+public class C14 {
 
    public static void main(String[] args) {
       int[] even = { 0, 1, 2, 3 };

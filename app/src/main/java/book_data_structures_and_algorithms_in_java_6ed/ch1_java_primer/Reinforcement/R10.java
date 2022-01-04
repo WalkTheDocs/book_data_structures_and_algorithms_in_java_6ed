@@ -10,7 +10,7 @@ import lombok.Data;
  * include methods for setting the value of each type, and getting the value of
  * each type.
  */
-class R10 {
+public class R10 {
     public static void main(String[] args) {
         Flower flower = new Flower("Tulip", 10, 20.99F);
         printFlowerInfo(flower);

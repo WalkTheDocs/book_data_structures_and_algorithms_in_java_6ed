@@ -8,7 +8,7 @@ import java.util.Scanner;
  * of each base type from the standard input device and prints it back to the
  * standard output device.
  */
-class R1 {
+public class R1 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {

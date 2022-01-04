@@ -5,7 +5,7 @@ package book_data_structures_and_algorithms_in_java_6ed.ch1_java_primer.Reinforc
  * and only if i is even. Your method cannot use the multiplication, modulus, or
  * division operators, however.
  */
-class R4 {
+public class R4 {
     public static void main(String[] args) {
         int test = Integer.parseInt(args[0]);
         System.out.println(Boolean.toString(isEven(test)));
