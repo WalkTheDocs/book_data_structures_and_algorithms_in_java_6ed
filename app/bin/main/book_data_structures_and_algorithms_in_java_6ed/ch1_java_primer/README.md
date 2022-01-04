@@ -2,6 +2,7 @@
 
 ## Quirks
 * R-11, R-12, and R-13 are to be found inside the CreditCard class. 
+* C-24 and C-25 are also inside the CreditCardClass.
 
 ## Pitfalls
 * Lombok requires as annotation support extension.

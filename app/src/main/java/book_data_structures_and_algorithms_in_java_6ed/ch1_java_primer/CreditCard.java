@@ -1,4 +1,4 @@
-package book_data_structures_and_algorithms_in_java_6ed.ch1_java_primer.Reinforcement;
+package book_data_structures_and_algorithms_in_java_6ed.ch1_java_primer;
 
 public class CreditCard {
     // Instance variables:
@@ -62,10 +62,11 @@ public class CreditCard {
     public boolean charge(double price) {
         // make a charge
         double newBalance = price + balance;
-        if (newBalance > limit) 
+        if (newBalance > limit)
             // if charge would surpass limit
             // R-13: Need to be able to tell if my calculations were correct;
-            throw new Error(String.format("Charge surpasses limit by $%,.2f for account %s", newBalance - balance, account));
+            throw new Error(
+                    String.format("Charge surpasses limit by $%,.2f for account %s", newBalance - balance, account));
         // refuse the charge
         // at this point, the charge is successful
         balance = newBalance;
@@ -85,21 +86,38 @@ public class CreditCard {
     public void makePayment(double amount) {
         double newBalance = balance - amount;
         if (newBalance < 0) {
-            printSummary(this);
+            printSummary();
             throw new Error(String.format("Overdrafted by $%d", Math.abs(newBalance)));
         } else {
             balance = newBalance;
         }
     }
 
-    // Utility method to print a card's information
-    public static void printSummary(CreditCard card) {
-        System.out.println("\nCustomer = " + card.customer);
-        System.out.println("Bank = " + card.bank);
-        System.out.println("Account = " + card.account);
-        System.out.println("Balance = " + card.balance); // implicit cast
-        System.out.println("Limit = " + card.limit + "\n");
-        // implicit cast
+    /**
+     * Utility method to print a card's information
+     * 
+     * Modify the CreditCard class from Code Fragment 1.5 so that printSummary be-
+     * comes a nonstatic method, and modify the main method from Code Fragment 1.6
+     * accordingly.
+     */
+    public void printSummary() {
+        System.out.println(toString());
+    }
+
+    /**
+     * Modify the CreditCard class to add a toString( ) method that returns a String
+     * representation of the card (rather than printing it to the console, as done
+     * by printSummary). Modify the main method from Code Fragment 1.6 accordingly
+     * to use the standard println command.
+     */
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("\nCustomer = " + customer);
+        builder.append("Bank = " + bank);
+        builder.append("Account = " + account);
+        builder.append("Balance = " + balance); // implicit cast
+        builder.append("Limit = " + limit + "\n");
+        return builder.toString();
     }
 
     public static void main(String[] args) {
@@ -123,7 +141,7 @@ public class CreditCard {
             wallet[2].charge(val);
         }
         for (CreditCard card : wallet) {
-            CreditCard.printSummary(card);
+            card.printSummary();
             // calling static method
             while (card.getBalance() > 200.0) {
                 card.makePayment(200);
