@@ -1,4 +1,4 @@
-package book_data_structures_and_algorithms_in_java_6ed.ch1_java_primer;
+package book_data_structures_and_algorithms_in_java_6ed.common;
 
 public class CreditCard {
     // Instance variables:
@@ -84,6 +84,11 @@ public class CreditCard {
      * Probably better to throw an error than to simply ignore it.
      */
     public void makePayment(double amount) {
+        // R-2.15
+        if (amount < 0) {
+            throw new IllegalArgumentException();
+        }
+
         double newBalance = balance - amount;
         if (newBalance < 0) {
             printSummary();

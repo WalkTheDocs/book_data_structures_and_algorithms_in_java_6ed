@@ -1,7 +1,7 @@
 # Chapter 1: Java Primer
 
 ## Quirks
-* R-11, R-12, and R-13 are to be found inside the CreditCard class. 
+* R-11, R-12, and R-13 are to be found inside the CreditCard class, which has been moved into common. 
 * C-24 and C-25 are also inside the CreditCardClass.
 
 ## Pitfalls
