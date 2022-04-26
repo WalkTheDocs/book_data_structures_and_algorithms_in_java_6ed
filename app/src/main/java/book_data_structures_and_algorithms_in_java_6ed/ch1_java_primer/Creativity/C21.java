@@ -20,7 +20,7 @@ public class C21 {
 
     private static int randIndex(int from, int toExclusive) {
         Random random = new Random();
-        return random.nextInt(from, toExclusive);
+        return random.nextInt(toExclusive - from) + from;
     }
 
     private static void swap(int[] arr, int indexA, int indexB) {
